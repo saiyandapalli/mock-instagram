@@ -65,7 +65,8 @@ public class NewPostActivity extends AppCompatActivity {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     String name =((EditText) findViewById(R.id.nameText)).getText().toString();;
-                    Post social = new Post(key, name);
+                    String email= ((EditText) findViewById(R.id.emailText)).getText().toString();
+                    Post social = new Post(key, email, name);
                     ref.child("socials").child(key).setValue(social);
                     startActivity(new Intent(NewPostActivity.this, ListActivity.class));
                 }

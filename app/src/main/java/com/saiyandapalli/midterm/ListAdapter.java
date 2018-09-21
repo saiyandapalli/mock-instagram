@@ -37,7 +37,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.CustomViewHold
     @Override
     public void onBindViewHolder(final CustomViewHolder holder, final int position) {
         Post m = data.get(position);
-        holder.nameView.setText(m.name);
+        holder.nameView.setText("Title: "+ m.name);
+        holder.emailView.setText("By: " + m.email);
         StorageReference storageReference = FirebaseStorage.getInstance().getReference().child(m.firebaseImageUrl + ".png");
         Glide.with(context).using(new FirebaseImageLoader()).load(storageReference).into(holder.imageView);
     }
@@ -54,9 +55,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.CustomViewHold
     class CustomViewHolder extends RecyclerView.ViewHolder {
         TextView nameView;
         ImageView imageView;
+        TextView emailView;
 
         public CustomViewHolder (View view) {
             super(view);
+            this.emailView = (TextView) view.findViewById(R.id.emailView);
             this.nameView = (TextView) view.findViewById(R.id.emailloginView);
             this.imageView = (ImageView) view.findViewById(R.id.imageView);
         }
