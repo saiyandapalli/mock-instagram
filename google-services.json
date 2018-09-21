@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "360230427673",
+    "firebase_url": "https://midterm-f820c.firebaseio.com",
+    "project_id": "midterm-f820c",
+    "storage_bucket": "midterm-f820c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360230427673:android:273853f29fa4b1c3",
+        "android_client_info": {
+          "package_name": "com.saiyandapalli.midterm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360230427673-nd2moj37isriad7hp38mfrndevo6c5o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnwajYL9WJeVhvUsJgJnQ88E6h9_niY30"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
